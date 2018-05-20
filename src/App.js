@@ -5,7 +5,7 @@ import Movie from './Movie';
 const movies = [
   {
     title: "matrix",
-    poster: "https://images-na.ssl-images-amazon.com/images/I/51EG732BV3L._SY445_.jpg"
+    poster: "https://ia.media-imdb.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR84,0,630,1200_AL_.jpg"
   },
   {
     title: "Full Metal Jacket",
@@ -25,8 +25,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       {movies.map(movie => {
-         return <Movie title={movie.title} poster={movie.poster} />
+       {movies.map((movie, index) => {
+         return <Movie title={movie.title} poster={movie.poster} key={index} />
        })}
       </div>
     );

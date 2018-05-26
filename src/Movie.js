@@ -36,7 +36,7 @@ function MovieGenre({genre}){
 Movie.propTypes = {
     title: PropTypes.string.isRequired,
     poster: PropTypes.string.isRequired,
-    genres: PropTypes.string.isRequired,
+    genres: PropTypes.array.isRequired,
     synopsis: PropTypes.string.isRequired
 }
 
@@ -45,7 +45,7 @@ MoviePoster.propTypes = {
     alt: PropTypes.string.isRequired
 }
 
-MoviePoster.propTypes = {
+MovieGenre.propTypes = {
     genre: PropTypes.string.isRequired
 }
 
